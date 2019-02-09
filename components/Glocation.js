@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Platform, Text, View, StyleSheet } from 'react-native';
 import { Constants, Location, Permissions } from 'expo';
 
-export class App extends Component {
+export class GL extends Component {
   state = {
     location: null,
     errorMessage: null,
