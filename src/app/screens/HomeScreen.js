@@ -40,7 +40,7 @@ export default class HomeScreen extends React.Component {
           </View> */}
 
           <View>
-            <Text>Hello Mohamed</Text>
+            <Text>Hello Mohamed1</Text>
           </View>
          
         </ScrollView>
