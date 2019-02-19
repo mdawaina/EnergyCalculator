@@ -7,23 +7,47 @@ import {
   Text,
   TouchableOpacity,
   View,
+  TextInput
 } from 'react-native';
 import { WebBrowser } from 'expo';
 import {GL} from '../components/Glocation';
 import { MonoText } from '../components/StyledText';
+
+
+
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
 
+ 
+    state = {
+      placeName : ''
+    };
+
+
+    handleChange = (value) => {
+      this.setState({
+        placeName = value
+      });
+    };
+  
+
+
   render() {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={styles.welcomeContainer}>
-< GL />
+            < GL />
           </View>
+
+          <TextInput 
+            style={{width: 300, borderColor: 'blue', borderWidth: 1}}
+            value={this.state.placeName}
+            onChangeText = {this.handleChange}
+          />
 
         {/*   <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
