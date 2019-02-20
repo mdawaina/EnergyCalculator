@@ -29,7 +29,7 @@ export default class HomeScreen extends React.Component {
 
     handleChange = (value) => {
       this.setState({
-        placeName = value
+        placeName : value
       });
     };
   
